@@ -3,7 +3,7 @@ class DirectoryService
         def Search
 
 		directories = ""
-		tmp = Dir.glob('/home/edisga/**/*')
+		tmp = Dir.glob('/bin/**/*')
 
 		tmp.each do |file_name|
 			#p file_name
