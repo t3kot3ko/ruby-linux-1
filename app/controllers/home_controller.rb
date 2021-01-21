@@ -1,16 +1,19 @@
 class DirectoryService
 
         def Search
+		directories = Array[]
+		tmp = Dir.glob('/**/*')
 
-		directories = ""
-		tmp = Dir.glob('/bin/**/*')
+                directoryStr = ""
+                     
+                i = 0
+                len = 100
 
 		tmp.each do |file_name|
-			#p file_name
-			directories = directories + "-" + file_name 
+			directories[i] = file_name + SecureRandom.alphanumeric(len) + "-"
 		end
-	
-		return tmp
+
+		return directories
         end
 end
 
@@ -20,7 +23,11 @@ class HomeController < ApplicationController
 
   def index
     service = DirectoryService.new
-    $directoriesArray.push(service.Search)
-    @output = "Response back from method"
+    directories = service.Search
+
+    $directoriesArray.push(directories)
+
+    p "#{$directoriesArray.count}"
+    @output = "Home Page loaded"
   end
 end
