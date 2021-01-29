@@ -1,24 +1,4 @@
-# README
+# Ruby Lab 1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+> **The purpose of this repository is intended just for troubleshooting training material and it is not recommended to take this as a reference for production scenarios**.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
