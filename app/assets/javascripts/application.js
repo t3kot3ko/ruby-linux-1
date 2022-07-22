@@ -14,3 +14,5 @@
 //= require activestorage
 //= require turbolinks
 //= require_tree .
+require ("peek")
+require ("peek/views/rblienprof")
